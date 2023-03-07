@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
 body {
     margin: 0;
     display: flex;
@@ -5,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    font-family: 'calculator', sans-serif;
 }
 
 .container {
@@ -29,6 +32,7 @@ body {
     max-height: 50px;
     margin-bottom: 10px;
     padding: 2rem;
+    font-size: 5rem;
 }
 
 .displayValue {
@@ -52,4 +56,8 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2rem;
+}
+
+button {
+    font-size: 2rem;
 }
