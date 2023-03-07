@@ -41,8 +41,3 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2rem;
 }
-
-.inputBtn {
-    border-radius: 50px;
-    margin: 5px;
-}
