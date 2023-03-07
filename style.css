@@ -31,6 +31,18 @@ body {
     padding: 2rem;
 }
 
+.displayValue {
+    width: 75%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.operatorValue {
+    align-self: flex-end;
+    margin-left: 0 auto;
+    flex-grow: 1;
+}
+
 .calculator {
     width: 75%;
     border-radius: 5px;
