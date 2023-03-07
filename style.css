@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: antiquewhite;
+    background-color: #666;
     height: 750px;
     width: 500px;
     display: flex;
@@ -24,7 +24,7 @@ body {
 .display {
     width: 75%;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255,255,255, 90%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,16 +35,19 @@ body {
     font-size: 5rem;
 }
 
-.displayValue {
+#displayValue {
     width: 75%;
     text-align: center;
-    flex-grow: 1;
+    border: 5px dashed red;
 }
 
-.operatorValue {
-    align-self: flex-end;
-    margin-left: 0 auto;
-    flex-grow: 1;
+#operatorDisplay {
+    width: 25%;
+    margin-left: auto;
+    border: 1px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calculator {
