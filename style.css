@@ -19,6 +19,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 50px;
+    overflow-y: hidden;
 }
 
 .display {
@@ -38,17 +39,8 @@ body {
 #displayValue {
     width: 75%;
     text-align: center;
-    border: 5px dashed red;
 }
 
-#operatorDisplay {
-    width: 25%;
-    margin-left: auto;
-    border: 1px dashed red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .calculator {
     width: 75%;
@@ -56,11 +48,34 @@ body {
     background-color: blueviolet;
     flex-grow: 3;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: dense;
     padding: 2rem;
 }
 
 button {
     font-size: 2rem;
+    box-shadow: none;
+}
+
+.operatorBtn {
+    background-color: orange;
+    color: white;
+}
+
+.clearBtn {
+    background-color: red;
+}
+
+.clearEntryBtn {
+    background-color: pink;
+}
+
+.equalsBtn {
+    background-color: lightgreen;
+}
+
+#zero {
+    grid-column: span 2;
 }
