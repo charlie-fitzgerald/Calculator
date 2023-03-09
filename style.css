@@ -8,10 +8,13 @@ body {
     align-items: center;
     box-sizing: border-box;
     font-family: 'calculator', sans-serif;
+    background-color: grey;
+    overflow-y: hidden;
 }
 
 .container {
     background-color: #666;
+    box-shadow: inset;
     height: 750px;
     width: 500px;
     display: flex;
@@ -50,13 +53,14 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
     grid-auto-flow: dense;
     padding: 2rem;
 }
 
 button {
     font-size: 2rem;
-    box-shadow: none;
+    border: none;
 }
 
 .operatorBtn {
