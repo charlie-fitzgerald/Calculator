@@ -63,9 +63,13 @@ button {
     border: none;
 }
 
+.operatorBtn,
+.clearBtn {
+    color: white;
+}
+
 .operatorBtn {
     background-color: orange;
-    color: white;
 }
 
 .clearBtn {
